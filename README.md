@@ -59,7 +59,7 @@ A correlação entre CPU e latência foi praticamente zero, mostrando que os aum
 Instale as bibliotecas necessárias:
 
 ```bash
-pip install pandas numpy matplotlib seaborn jupyter
+pip install pandas numpy matplotlib seaborn 
 ```
 
 ## 🤖 Exercício — Análise de Experimentos de Machine Learning
