@@ -18,7 +18,7 @@ Repositório acadêmico destinado às atividades e aos projetos desenvolvidos na
 - **NumPy:** operações numéricas;
 - **Matplotlib:** criação e personalização de gráficos;
 - **Seaborn:** visualizações estatísticas;
-- **Jupyter Notebook ou Google Colab:** execução e documentação do código.
+
 
 
 
@@ -59,7 +59,25 @@ A correlação entre CPU e latência foi praticamente zero, mostrando que os aum
 Instale as bibliotecas necessárias:
 
 ```bash
-pip install pandas numpy matplotlib seaborn jupyter
+pip install pandas numpy matplotlib seaborn 
 ```
 
-Depois, coloque o arquivo `monitoramento_ti_infra.csv` no mesmo diretório que o arquivo e execute as células na ordem apresentada.
+## 🤖 Exercício — Análise de Experimentos de Machine Learning
+
+### Objetivo
+
+Realizar uma Análise Exploratória de Dados no arquivo `ml_models_dataset_sujo.csv`, investigando a qualidade dos registros, o desempenho por hardware e as probabilidades de aprovação para deploy.
+
+### Etapas realizadas
+
+- Inspeção da estrutura e dos valores ausentes;
+- Tratamento de acurácias inválidas, taxas de aprendizado não positivas e temperaturas corrompidas;
+- Preenchimento de valores ausentes com mediana, moda ou categoria;
+- Comparação das estatísticas antes e depois da limpeza;
+- Identificação de outliers pelo método IQR;
+- Cálculo de probabilidades gerais e condicionais;
+- Criação de histogramas, boxplots, gráfico de probabilidades e mapas de calor.
+
+### 📝 Análise dos resultados
+
+O storytelling completo, com a interpretação dos resultados e as limitações da análise, está disponível dentro da pasta do código.
