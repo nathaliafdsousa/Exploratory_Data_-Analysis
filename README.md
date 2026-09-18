@@ -80,4 +80,4 @@ Realizar uma Análise Exploratória de Dados no arquivo `ml_models_dataset_sujo.
 
 ### 📝 Análise dos resultados
 
-O storytelling completo, com a interpretação dos resultados e as limitações da análise, está disponível no notebook dentro da pasta do código.
+O storytelling completo, com a interpretação dos resultados e as limitações da análise, está disponível dentro da pasta do código.
