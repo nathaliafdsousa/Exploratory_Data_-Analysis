@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('monitoramento_ti_infra.csv')
+df = pd.read_csv('monitoramnto_ti/monitoramento_ti_infra.csv',sep=';')
 df.info()
 
 df['timestamp'] = pd.to_datetime(df['timestamp'], errors='coerce') # Converte a coluna data de texto em datetime

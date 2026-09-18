@@ -3,19 +3,19 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('ml_models_dataset_sujo.csv')
+df = pd.read_csv('ml_experiment/ml_models_dataset_sujo.csv',sep=';')
 
 # Visualizando as 5 primeiras linhas do dataset
-df.head()
+print(df.head())
 
 # Visualizando quantidade de registros, tipos dos dados e quantidade de valores preenchidos
-df.info()
+print(df.info())
 
 # Estatísticas de valores númericos
-df.describe().T
+print(df.describe().T)
 
 # Estatística de objetos
-df.describe(include='object').T
+print(df.describe(include='object').T)
 
 qt_nulos = df.isna().sum()
 print(qt_nulos)
@@ -171,7 +171,7 @@ resumo_outliers = pd.DataFrame({
     "Percentual": outliers.sum() / len(df_limpo) * 100
 })
 
-resumo_outliers.round(4)
+print(resumo_outliers.round(4))
 
 # Exibimos os experimentos com tempos sinalizados pelo IQR, para examinar os valores e o hardware utilizado.
 df_limpo.loc[
@@ -212,7 +212,7 @@ tabela_probabilidades = pd.DataFrame({
     "Aprovação (%)": probabilidade_por_hardware * 100
 })
 
-tabela_probabilidades.round(2)
+print(tabela_probabilidades.round(2))
 
 # Ordenamos as probabilidades para facilitar a comparação visual.
 probabilidades_ordenadas = probabilidade_por_hardware.sort_values(
