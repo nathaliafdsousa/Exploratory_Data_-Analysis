@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('ml_experiment/ml_models_dataset_sujo.csv',sep=';')
+df = pd.read_csv('ml_experiment/ml_models_dataset_sujo.csv')
 
 # Visualizando as 5 primeiras linhas do dataset
 print(df.head())
